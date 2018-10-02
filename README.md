@@ -7,7 +7,7 @@ Simple Migration and Seeds file for adding Languages to your Rails app.
 Run the migration or use the rails generator
 
 ```bash
-  rails g model Language name:string:index native:string family:string scope:string type:string iso_639_1:string iso_639_2b:string iso_639_3:integer:index
+  rails g model Language name:string:index native:string family:string scope:string type_of:string iso_639_1:string iso_639_2b:string iso_639_3:integer:index
 ```
 
 #### Scope / Type Key
