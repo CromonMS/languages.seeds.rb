@@ -7,17 +7,21 @@ class CreateLanguages < ActiveRecord::Migration
   def change
     create_table :languages do |t|
       t.string :name
-      t.string :native
-      t.string :family
-      t.string :scope
-      t.string :type_of
       t.string :iso_639_1
+      t.string :iso_639_2t
       t.string :iso_639_2b
       t.string :iso_639_3
+      t.string :scope
+      t.string :type_of
+      t.string :endonyms
+      t.string :other_names
+      t.text :notes
 
       t.timestamps null: false
 
       add_index(:countries, :name)
+      add_index(:countries, :iso_639_1)
+      add_index(:countries, :iso_639_2t)
       add_index(:countries, :iso_639_3)
     end
   end
