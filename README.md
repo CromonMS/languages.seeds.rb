@@ -12,6 +12,13 @@ Run the migration or use the rails generator
 
 Copy over your seeds, seed them in your usual way, and viola!
 
+Here is a gist with a rake task that will allow you to import these seeds from the file directly:
+
+```
+https://gist.github.com/CromonMS/2edc3ccc254ef9baa34d61252530a566
+```
+
+
 That's it!
 
 ## Update Countries List
